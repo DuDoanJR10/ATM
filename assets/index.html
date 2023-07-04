@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a345ea1260.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="home">
+            <div class="container">
+                <div class="home__content">
+                    <div class="balance">
+                        <div class="balance__money">
+                            <h2 class="balance__money__heading">Total Balance</h2>
+                            <div class="balance__money__total display-flex">
+                                <p class="total"></p>
+                                <span class="unit">VND</span>
+                            </div>
+                        </div>
+                        <div class="balance__icon">
+                            <i class="fa-sharp fa-solid fa-coins balance__icon__coins"></i>
+                        </div>
+                    </div>
+
+                    <div class="rule">
+                        <div class="rule__min">
+                            <h3 class="rule__min__title text-uppercase">Min</h3>
+                            <p class="rule__min__money">
+                                10,000VND
+                            </p>
+                        </div>
+                        
+                        <div class="rule__max">
+                            <h3 class="rule__max__title text-uppercase">Max</h3>
+                            <div class="rule__max__money display-flex justify-content-center">
+                                <p class="total"></p>
+                                <span class="unit">VND</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="keyboard">
+                        <input class="keyboard__input" type="text" id="inputBox" placeholder="0" />
+
+                        <button class="keyboard__button">Withdraw </button>
+                        
+                        <p class="keyboard__message">Message!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
